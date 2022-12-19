@@ -1,0 +1,9 @@
+<div>
+  Username : <input type="text" [(ngModel)]="username" (ngModelChange)="doSomething($event)"><br>
+  <p>{{username}}</p>
+  <br>
+  <button (click)="resetName()" [disabled]="isDisabled">Reset User</button>
+</div>
+
+
+<!-- for 2 way binding we have to add FormsModule in imports of app module.ts -->
