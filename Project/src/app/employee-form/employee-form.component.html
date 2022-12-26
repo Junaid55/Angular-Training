@@ -1,0 +1,34 @@
+<div class="container-fluid">
+    <form #empForm="ngForm" (ngSubmit)="addEmployee()">
+        <div class="form-group">
+          <label for="id">Employee Id</label>
+          <input type="number" class="form-control"  placeholder="Enter Id" [(ngModel)]="employee.id" name="id"  [readonly]="edited" #id="ngModel" required>
+          <span style="color: red;" *ngIf="id.touched && id.invalid">Id is required</span>
+          
+        </div>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" placeholder="Enter name" [(ngModel)]="employee.name" name="name" #name="ngModel" required>
+          <span style="color: red;" *ngIf="name.touched && name.invalid">Name is required</span>
+        </div>
+        <div class="form-group">
+            <label for="salary">Salary</label>
+            <input type="number" class="form-control" placeholder="Enter salary" [(ngModel)]="employee.basic" name="basic"  #salary="ngModel" required>
+            <span style="color: red;" *ngIf="salary.touched && salary.invalid">Salary is required</span>
+          </div>
+
+          <div class="form-group">
+            <label for="dpt">Department Number</label>
+            <input type="number" class="form-control" placeholder="Enter department" [(ngModel)]="employee.deptNo" name="deptNo" #dpt="ngModel" required>
+            <span style="color: red;" *ngIf="dpt.touched && dpt.invalid">Salary is required</span>
+          </div>
+          <br>
+        <button type="submit" class="btn btn-success" [disabled]="empForm.invalid">Submit</button>
+        
+      </form>
+      <br>
+     
+      <button (click)="resetButton()" class="btn btn-warning" >Reset</button>
+</div>
+<!-- {{employee}}
+<button (click)="fillFrom()">click me</button> -->
