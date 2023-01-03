@@ -1,0 +1,37 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "saveData": [
+    {
+      "name": "Junaid",
+      "email": "j@gmail.com",
+      "fname": "Papa",
+      "mname": "Mummy",
+      "gdr": "M",
+      "dob": "2023-01-16T18:30:00.000Z",
+      "mobile": 8109140470,
+      "accno": 17817187171871,
+      "bankname": "BOI",
+      "ifsc": "BKID187181",
+      "ibanking": "Y",
+      "mbanking": "N",
+      "pradd": "175 Ujjain  nagarkot",
+      "id": 1
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
